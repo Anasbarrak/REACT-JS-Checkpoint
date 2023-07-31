@@ -1,4 +1,6 @@
+
 import React from 'react'
+/* importing all what is necessary for the checkpoint's work */
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -13,8 +15,11 @@ function App() {
     const [show, setShow]=useState()
   return (
     <div>
+      </*  Creating react-fragment inside the div*/
         <React.Fragment>
+      /* Adding a className named "App */
         <div className='App'>
+      /* Creating a Navbar inside the "App.js file */
         <Navbar expand="lg" className="bg-body-tertiary">
     <Container>
       <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
@@ -38,6 +43,7 @@ function App() {
       </Navbar.Collapse>
     </Container>
   </Navbar>
+      /* Creating a heading inside the div named "App" */
       <Alert show={show} variant="success">
         <Alert.Heading>My Alert</Alert.Heading>
         <p>
@@ -50,6 +56,7 @@ function App() {
           </Button>
         </div>
       </Alert>
+      /* Adding 3 cards as required in the checkpoint's instructions */
   <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
